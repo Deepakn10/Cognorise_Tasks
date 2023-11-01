@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Portfolio</title>
+</head>
+<style>
+    /* Font */
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,700");
+
+/* Design */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #ecf9ff;
+}
+
+body {
+  color: #272727;
+  font-family: "Quicksand", serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 1rem;
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.btn {
+  color: #ffffff;
+  padding: 0.8rem;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card_content {
+  padding: 1rem;
+  background: linear-gradient(to bottom left, #070707 40%, #dfac7a 100%);
+}
+
+.card_title {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+}
+
+.card_text {
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+  font-weight: 400;
+}
+.made_by {
+  font-weight: 400;
+  font-size: 13px;
+  margin-top: 35px;
+  text-align: center;
+}
+/* footer*/
+img {
+  max-width: 100%;
+  height: auto;
+}
+section {
+  padding: 60px 0;
+  /* min-height: 100vh;*/
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.contact-area {
+  border-bottom: 1px solid #353c46;
+}
+
+.contact-content p {
+  font-size: 15px;
+  margin: 30px 0 60px;
+  position: relative;
+}
+
+.contact-content p::after {
+  background: #353c46;
+  bottom: -30px;
+  content: "";
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%);
+  width: 80%;
+}
+
+.contact-content h6 {
+  color: #8b9199;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.contact-content span {
+  color: #353c47;
+  margin: 0 10px;
+}
+
+.contact-social {
+  margin-top: 30px;
+}
+
+.contact-social > ul {
+  display: inline-flex;
+}
+
+.contact-social ul li a {
+  border: 1px solid #8b9199;
+  color: #8b9199;
+  display: inline-block;
+  height: 40px;
+  margin: 0 10px;
+  padding-top: 7px;
+  transition: all 0.4s ease 0s;
+  width: 40px;
+}
+
+.contact-social ul li a:hover {
+  border: 1px solid #fab702;
+  color: #fab702;
+}
+
+.contact-content img {
+  max-width: 210px;
+}
+
+section,
+footer {
+  background: antiquewhite;
+  color: #868c96;
+}
+
+footer p {
+  padding: 40px 0;
+  text-align: center;
+}
+
+footer img {
+  width: 44px;
+}
+
+    #header{
+        background-color:antiquewhite;
+        padding: 400px;
+    }
+    #edu{
+        background: linear-gradient(to bottom left, #070707 40%, #dfac7a 100%);
+
+    }
+</style>
+<body>
+    <div id="header" class="containerfulid p-5">
+            <div id="title" class="container">
+                <div class="card text-center">
+                    <div class="card-body">
+                      <h5 class="card-title h1">DEEPAKKUMAR N</h5>
+                    </div>
+                  </div>
+            </div>
+    </div>
+    <center class="h2">EDUCATION</center> <br>
+    <div class="card-group">
+        <div class="card">
+          <div class="card-body p-5  link-light" id="edu">
+            <p class="card-text"><small class="link-light">2020-Present</small></p>
+            <h5 class="card-title"></h5>
+            <p class="card-text">K.S.R College Of Engineering,Tiruchengode<br>Bachelor of Engineering <br> Major : Computer Science And Engineering <br> Cgpa : 7.95/10</p>
+          </div>
+        </div> &nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="card">
+          <div class="card-body p-5 link-light"id="edu">
+            <p class="card-text"><small class=" link-light">2019-2020</small></p>
+            <h5 class="card-title"></h5>
+            <p class="card-text">SRI VIDYA MANDIR MATRICULATION HIGHER SECONDARY SCHOOL,GURUSAMIPALAYAM <br> Percentage : 69/100</p>
+          </div>
+        </div>&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="card">
+          <div class="card-body p-5 link-light"id="edu">
+            <p class="card-text"><small class=" link-light">2017-2018</small></p>
+            <h5 class="card-title"></h5>
+            <p class="card-text">SRI VIDYA MANDIR MATRICULATION HIGHER SECONDARY SCHOOL,GURUSAMIPALAYAM <br> Percentage : 79/100</p>
+          </div>
+        </div>
+    </div>
+      <hr>
+    <center class="h2">PROJECTS</center> <br>
+    <div class="main">
+        <ul class="cards">
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image"><img src="https://picsum.photos/500/300/?image=5"></div>
+              <div class="card_content">
+                <h2 class="card_title">Responsive Login page</h2> <br>
+                <p class="card_text">Creating a login page project typically involves developing a web-based authentication system where users can securely log into an application or website.In this project, you will design and implement a user authentication system, including a login page, to securely manage user access to a web application. The login page will be the gateway for users to enter the application by verifying their credentials and the technology used as HTML,CSS and JS</p>
+                <button class="btn card_btn">Visit</button>
+              </div>
+            </div>
+          </li>
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image"><img src="https://picsum.photos/500/300/?image=5"></div>
+              <div class="card_content">
+                <h2 class="card_title">college website</h2> <br>
+                <p class="card_text">Creating a college website is a substantial project that involves designing and developing a web platform to serve various functions for students, faculty, and administrators.The College Website project aims to create a comprehensive and user-friendly web platform for a college or university. The website will serve as an essential hub for students, faculty, staff, and the broader community, providing access to information, resources, and services related to the institution. </p>
+                <button class="btn card_btn">Visit</button>
+              </div>
+            </div>
+          </li>
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image"><img src="https://picsum.photos/500/300/?image=5"></div>
+              <div class="card_content">
+                <h2 class="card_title">Online Shopping System</h2> <br>
+                <p class="card_text">Creating an online shopping system is a complex but rewarding project that involves the development of a full-fledged e-commerce platform.In this project, you will design and develop an online shopping system, a comprehensive e-commerce platform that allows users to browse, search for, and purchase products online. The system will include features for both customers and administrators to manage products, orders, and accounts.</p>
+                <button class="btn card_btn">Visit</button>
+              </div>
+            </div>
+        </li>
+        </ul>
+      </div>
+      <hr>
+    <div class = "container">  
+        <center class="h2">SKILLS</center> <br>
+        <b>JAVA</b>  
+        <div class = "progress">  
+        <div class = "progress-bar" style = "width:55%">  
+        </div>  
+        </div> <br>
+        <b>HTML/CSS</b>  
+        <div class = "progress">  
+        <div class = "progress-bar" style = "width:80%">  
+        </div>  
+        </div>  <br>
+        <b>JS</b>  
+        <div class = "progress">  
+        <div class = "progress-bar" style = "width:45%">  
+        </div>  
+        </div>  <br>
+        <b>UI/UX</b>  
+        <div class = "progress">  
+        <div class = "progress-bar" style = "width:70%">  
+        </div>  
+        </div>  
+     </div>  
+     <hr>
+     <section class="contact-area" id="contact">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+              <div class="contact-content text-center">
+                <p class="link-dark">I hereby declare that the above-mentioned information is accurate to the best of my knowledge and belief.</p>
+                <div class="hr"></div>
+                <h6 class="link-dark">5/494 Gurusamipalayam , Rasipuram , Namakkal(DT)</h6>
+                <h6 class="link-dark">+91 63694 32498<span>|</span>+91 63694 32498</h6>
+                <div class="contact-social">
+                  <ul>
+                    <li><a href="https://www.linkedin.com/in/deepakkumar-n-9a202a256/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="hover-target" href=""><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/Deepakn10" class="hover-target" href=""><i class="fa fa-github"></i></a></li>
+                    <li><a href="https://copper-tonye-5.tiiny.site" class="hover-target" href=""><i class="fa fa-download"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+</body>
+</html>
